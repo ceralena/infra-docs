@@ -15,10 +15,10 @@ static site if it gets unwieldy.
 
 Networks:
 
-| Subnet Name           | Location  | CIDR             | # Hosts |
-| ----------------      | ----------| ---------------- | ------- |
-| HomeShared            | Melbourne | `192.168.1.1/24` | 256     |
-| HomeInfrastructure    | Melbourne | `192.168.2.1/24` | 256     |
+| Subnet Name           | Location  | CIDR             |
+| ----------------      | ----------| ---------------- |
+| HomeShared            | Melbourne | `192.168.1.1/24` |
+| HomeInfrastructure    | Melbourne | `192.168.2.1/24` |
 
 Devices:
 
