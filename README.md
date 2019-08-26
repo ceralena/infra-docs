@@ -32,10 +32,10 @@ Devices:
 
 This is a little server in a metal enclosure.
 
-Board: [PC Engines apu2c4](https://pcengines.ch/apu2c4.htm)
-Memory: 4GB DRAM
-Storage: 256gb mSata SSD
-Network: HomeShared
+* Board: [PC Engines apu2c4](https://pcengines.ch/apu2c4.htm)
+* Memory: 4GB DRAM
+* Storage: 256gb mSata SSD
+* Network: HomeShared
 
 It has no video output, so the initial setup is done over a null modem cable.
 
@@ -45,13 +45,13 @@ It's running Ubuntu 18.04 (Bionic) and [MicroK8s](https://microk8s.io/).
 
 This is my primary laptop.
 
-Year: 2018
-Machine: X1 Carbon Gen 6
-CPU: Intel Core i7-8550U (8M cache, 1.8GHz, 4.0GHz max)
-Memory: 16GB LPDDR3 2133mhz
-Storage: 512GB PCIe SSD
-Display: 14.0" 2560x1440 IPS
-Battery: 3 cell 757Wh
+* Year: 2018
+* Machine: X1 Carbon Gen 6
+* CPU: Intel Core i7-8550U (8M cache, 1.8GHz, 4.0GHz max)
+* Memory: 16GB LPDDR3 2133mhz
+* Storage: 512GB PCIe SSD
+* Display: 14.0" 2560x1440 IPS
+* Battery: 3 cell 757Wh
 
 The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Windows
 boots by default.
@@ -60,10 +60,10 @@ boots by default.
 
 This is a desktop I built for work and gaming.
 
-Year: 2017
-CPU: AMD Ryzen 5 1600 6 Core AM4 CPU
-Video: GeForce GTX 1060 6GG
-Memory: Corsair 16GB DDR4 3000MHz
+* Year: 2017
+* CPU: AMD Ryzen 5 1600 6 Core AM4 CPU
+* Video: GeForce GTX 1060 6GG
+* Memory: Corsair 16GB DDR4 3000MHz
 
 The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Windows
 boots by default.
