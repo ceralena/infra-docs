@@ -22,9 +22,11 @@ Networks:
 
 Devices:
 
-* Model: old ADSL junk in bridge mode
-* Router: [UniFi EdgeRouter X](https://www.ui.com/edgemax/edgerouter-x/)
+* Modem: old ADSL junk in bridge mode
+* Router: [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/)
+* Switch: [UniFi Switch 24 PoE+](https://www.ui.com/unifi-switching/unifi-switch-2448/)
 * Wireless AP: [UniFi AP AC Lite](https://www.ui.com/unifi/unifi-ap-ac-lite/) - 802.11ac dual radio AP
+* SDN Controller: [UniFi Cloud Key](https://www.ui.com/unifi/unifi-cloud-key/)
 
 ## Hosts
 
