@@ -15,10 +15,17 @@ static site if it gets unwieldy.
 
 Networks:
 
-| Subnet Name           | Location  | CIDR             |
-| ----------------      | ----------| ---------------- |
-| HomeShared            | Melbourne | `192.168.1.1/24` |
-| HomeInfrastructure    | Melbourne | `192.168.2.1/24` |
+| Subnet Name           | Location  | CIDR              | VLAN ID |
+| ----------------      | ----------| ----------------- | ------- |
+| CentralTrunk          | Melbourne | `192.168.6.1/24`  | 6       |
+| CentralGuest          | Melbourne | `192.168.11.1/24` | 11      |
+| CentralIOT            | Melbourne | `192.168.69.1/24` | 69      |
+| CentralBastion        | Melbourne | `192.168.99.1/24` | 99      |
+
+By convention, the VLAN ID matches the third octet.
+
+Cross-talk isn't allowed between any subnets, except for CentralBastion, which
+can forward SSH traffic to hosts on CentralTrunk.
 
 Devices:
 
@@ -32,18 +39,23 @@ Devices:
 
 ### glow
 
+**Network**: CentralBastion
+
 This is a little server in a metal enclosure.
 
 * Board: [PC Engines apu2c4](https://pcengines.ch/apu2c4.htm)
 * Memory: 4GB DRAM
 * Storage: 256gb mSata SSD
-* Network: HomeShared
 
 It has no video output, so the initial setup is done over a null modem cable.
 
 It's running Ubuntu 18.04 (Bionic) and [MicroK8s](https://microk8s.io/).
 
+It's used as a bastion host for the network.
+
 ### rup
+
+**Network**: CentralTrunk
 
 This is my primary laptop.
 
@@ -60,6 +72,8 @@ boots by default.
 
 ### niue
 
+**Network**: CentralTrunk
+
 This is a desktop I built for work and gaming.
 
 * Year: 2017
@@ -69,3 +83,9 @@ This is a desktop I built for work and gaming.
 
 The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Windows
 boots by default.
+
+### ChromeCast-Ultra
+
+**Network**: CentralTrunk
+
+* Year: 2019
