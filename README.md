@@ -15,17 +15,17 @@ static site if it gets unwieldy.
 
 Networks:
 
-| Subnet Name           | Location  | CIDR              | VLAN ID |
-| ----------------      | ----------| ----------------- | ------- |
-| CentralTrunk          | Melbourne | `192.168.6.1/24`  | 6       |
-| CentralGuest          | Melbourne | `192.168.11.1/24` | 11      |
-| CentralIOT            | Melbourne | `192.168.69.1/24` | 69      |
-| CentralBastion        | Melbourne | `192.168.99.1/24` | 99      |
+| Subnet Name      | Location  | CIDR              | VLAN ID |
+| ---------------- | ----------| ----------------- | ------- |
+| CentralTrusted   | Melbourne | `192.168.6.1/24`  | 6       |
+| CentralGuest     | Melbourne | `192.168.11.1/24` | 11      |
+| CentralIOT       | Melbourne | `192.168.69.1/24` | 69      |
+| CentralBastion   | Melbourne | `192.168.99.1/24` | 99      |
 
 By convention, the VLAN ID matches the third octet.
 
 Cross-talk isn't allowed between any subnets, except for CentralBastion, which
-can forward SSH traffic to hosts on CentralTrunk.
+can forward SSH traffic to hosts on CentralTrusted.
 
 Devices:
 
@@ -55,7 +55,7 @@ It's used as a bastion host for the network.
 
 ### rup
 
-**Network**: CentralTrunk
+**Network**: CentralTrusted
 
 This is my primary laptop.
 
@@ -72,7 +72,7 @@ boots by default.
 
 ### niue
 
-**Network**: CentralTrunk
+**Network**: CentralTrusted
 
 This is a desktop I built for work and gaming.
 
@@ -86,6 +86,6 @@ boots by default.
 
 ### ChromeCast-Ultra
 
-**Network**: CentralTrunk
+**Network**: CentralTrusted
 
 * Year: 2019
