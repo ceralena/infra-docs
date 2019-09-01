@@ -90,3 +90,15 @@ boots by default.
 **Network**: CentralTrusted
 
 * Year: 2019
+
+### bep
+
+**Network**: CentralIOT
+
+This is a Raspberry Pi 3 Model B running [Raspbian](https://en.wikipedia.org/wiki/Raspbian) Buster.
+
+* Year: 2016
+* CPU: Quad Core 1.2GHz Broadcom BCM2837
+* Memory: 1GB RAM
+
+This is the only trusted device on the `central-iot` network. It's used for monitoring and controlling IOT stuff.
