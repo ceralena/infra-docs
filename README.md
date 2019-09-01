@@ -24,16 +24,17 @@ Networks:
 
 By convention, the VLAN ID matches the third octet.
 
-Cross-talk isn't allowed between any subnets, except for CentralBastion, which
-can forward SSH traffic to hosts on CentralTrusted.
+Soon, I'll add default-deny rules for traffic between subnets - with some exceptions like the Bastion host.
 
 Devices:
 
 * Modem: old ADSL junk in bridge mode
-* Router: [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/)
+* Router: [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/) (USG)
 * Switch: [UniFi Switch 24 PoE+](https://www.ui.com/unifi-switching/unifi-switch-2448/)
 * Wireless AP: [UniFi AP AC Lite](https://www.ui.com/unifi/unifi-ap-ac-lite/) - 802.11ac dual radio AP
 * SDN Controller: [UniFi Cloud Key](https://www.ui.com/unifi/unifi-cloud-key/)
+
+The Switch isn't L3-native, so routing between subnets happens on the USG.
 
 ## Hosts
 
