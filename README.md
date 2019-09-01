@@ -103,7 +103,7 @@ boots by default.
 
 **Network**: CentralIOT
 
-This is a Raspberry Pi 3 Model B running [Raspbian](https://en.wikipedia.org/wiki/Raspbian) Buster.
+This is a [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) running [Raspbian](https://en.wikipedia.org/wiki/Raspbian) Buster.
 
 * Year: 2016
 * CPU: Quad Core 1.2GHz Broadcom BCM2837
