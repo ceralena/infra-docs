@@ -35,7 +35,14 @@ Soon, I'll add default-deny rules for traffic between subnets - with some except
 | Wireless AP    | [UniFi AP AC Lite](https://www.ui.com/unifi/unifi-ap-ac-lite/)                |                                                                            |
 | SDN Controller | [UniFi Cloud Key](https://www.ui.com/unifi/unifi-cloud-key/)                  |                                                                            |
 
-The Switch isn't L3-native, so routing between subnets happens on the USG.
+The Switch isn't L3-native, so routing between VLANs happens on the USG.
+
+### Wireless Networks
+
+| SSID                | VLAN ID | Spectrum    | Role            |
+| ------------------- | ------- | ----------- | --------------- |
+| `whats-up-bb-hru`   | 6       | 5GHz only   | trusted devices |
+| `whats-up-bb-iot`   | 69      | 2.4GHz only | trusted devices |
 
 ## Hosts
 
