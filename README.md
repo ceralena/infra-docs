@@ -15,12 +15,12 @@ static site if it gets unwieldy.
 
 Networks:
 
-| Subnet Name      | Location  | CIDR              | VLAN ID |
-| ---------------- | ----------| ----------------- | ------- |
-| CentralTrusted   | Melbourne | `192.168.6.1/24`  | 6       |
-| CentralGuest     | Melbourne | `192.168.11.1/24` | 11      |
-| CentralIOT       | Melbourne | `192.168.69.1/24` | 69      |
-| CentralBastion   | Melbourne | `192.168.99.1/24` | 99      |
+| Subnet Name      | Domain          | Location  | CIDR              | VLAN ID |
+| ---------------- | --------------- | --------- | ----------------- | ------- |
+| CentralTrusted   | central-trusted | Melbourne | `192.168.6.1/24`  | 6       |
+| CentralGuest     | central-guest   | Melbourne | `192.168.11.1/24` | 11      |
+| CentralIOT       | central-iot     | Melbourne | `192.168.69.1/24` | 69      |
+| CentralBastion   | central-bastion | Melbourne | `192.168.99.1/24` | 99      |
 
 By convention, the VLAN ID matches the third octet.
 
