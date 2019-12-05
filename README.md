@@ -98,7 +98,23 @@ boots by default.
 
 **Network**: CentralTrusted
 
+This is a Chromecast Ultra supporting 4k ouptut.
+
 * Year: 2019
+
+### glow
+
+**Network**: CentralTrusted
+
+This is an [ODROID-N2](https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram/) single board computer plugged into my TV.
+
+It runs CoreELEC, a fork of LibreElec. It handles 4k 60hz HDMI output smoothly and doesn't skip a beat decoding HEVC.
+
+* Year: 2019
+* CPU: Quad-core Cortex-A73 (1.8Ghz) and Dual-core Cortex-A53 (1.9Ghz); ARMv8-A with Neon and Crypto extenions
+* Video: HDMI 2.0 with 4K@60Hz
+* Memory: 4Gib DDR4
+* Networking: GbE LAN port connected to a Unifi Switch 8
 
 ### bep
 
