@@ -13,6 +13,10 @@ static site if it gets unwieldy.
 
 ## Networking
 
+### Internet Access
+
+NBN FTTC 100/40 through Aussie Broadband as of 2019-11.
+
 ### Networks
 
 | Subnet Name      | Domain          | Location  | CIDR              | VLAN ID |
