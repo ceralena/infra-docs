@@ -27,14 +27,14 @@ Soon, I'll add default-deny rules for traffic between subnets - with some except
 
 ### Networking Devices
 
-| Role           | Model                                                                         | Comment                 |
-| -------------- | ----------------------------------------------------------------------------- | ----------------------- |
-| Modem          | ?                                                                             | old junk in bridge mode |
-| Router         | [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/)               | "USG"                   |
-| Switch         | [UniFi Switch 24 PoE+](https://www.ui.com/unifi-switching/unifi-switch-2448/) | in central closet       |
-| Switch         | [UniFi Switch 8](https://www.ui.com/unifi-switching/unifi-switch-8/)          | in living room          |
-| Wireless AP    | [UniFi AP AC Lite](https://www.ui.com/unifi/unifi-ap-ac-lite/)                |                         |
-| SDN Controller | [UniFi Cloud Key](https://www.ui.com/unifi/unifi-cloud-key/)                  |                         |
+| Role           | Model                                                                                                             | Comment            |
+| -------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Modem          | [NBN Fibre to the Curb NCD](https://www.nbnco.com.au/learn/network-technology/fibre-to-the-curb-explained-fttc)   |                    |
+| Router         | [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/)                                                   | "USG"              |
+| Switch         | [UniFi Switch 24 PoE+](https://www.ui.com/unifi-switching/unifi-switch-2448/)                                     | in central closet  |
+| Switch         | [UniFi Switch 8](https://www.ui.com/unifi-switching/unifi-switch-8/)                                              | in living room     |
+| Wireless AP    | [UniFi AP AC Lite](https://www.ui.com/unifi/unifi-ap-ac-lite/)                                                    | on hallway ceiling |
+| SDN Controller | [UniFi Cloud Key](https://www.ui.com/unifi/unifi-cloud-key/)                                                      |                    |
 
 The Switch isn't L3-native, so routing between VLANs happens on the USG.
 
