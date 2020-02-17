@@ -79,7 +79,7 @@ It's running Ubuntu 18.04 (Bionic) and [MicroK8s](https://microk8s.io/).
 
 It's used as a bastion host for the network.
 
-### rup
+### rup / mopl
 
 **Network**: CentralTrusted
 
@@ -93,8 +93,9 @@ This is my primary laptop.
 * Display: 14.0" 2560x1440 IPS
 * Battery: 3 cell 757Wh
 
-The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Windows
-boots by default.
+The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Arch boots by default.
+
+Hostname is `rup` under Windows, `mopl` under Arch.
 
 ### niue
 
