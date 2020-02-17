@@ -51,6 +51,18 @@ The Switch isn't L3-native, so routing between VLANs happens on the USG.
 
 ## Hosts
 
+### tube
+
+**Network**: CentralTrusted
+
+This is an ODROID-N2 running CoreElec as a Kodi media centre.
+
+* Board: [ODROID-N2](https://www.hardkernel.com/shop/odroid-n2-with-4gbyte-ram/)
+* Memory: 4GB RAM
+* Storage: 6TB and 2TB USB3 mechanical drives
+
+It supports 4k 60hz HDMI 2.0 output. It also has transmission running as a daemon.
+
 ### glow
 
 **Network**: CentralBastion
