@@ -5,6 +5,22 @@ This repository holds documentation about my personal infrastructure.
 For now, everything's in the README. I'll break it up or convert it into a
 static site if it gets unwieldy.
 
+- [infra-docs](#infra-docs)
+  - [Why is it public?](#why-is-it-public)
+  - [Networking](#networking)
+    - [Internet Access](#internet-access)
+    - [Networks](#networks)
+    - [Networking Devices](#networking-devices)
+    - [Wireless Networks](#wireless-networks)
+  - [Hosts](#hosts)
+    - [tube](#tube)
+    - [glow](#glow)
+    - [rup / mopl](#rup--mopl)
+    - [niue](#niue)
+    - [ChromeCast-Ultra](#chromecast-ultra)
+    - [glow](#glow-1)
+    - [bep](#bep)
+
 ## Why is it public?
 
 * to discourage myself from relying on security through obscurity
