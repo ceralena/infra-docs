@@ -63,7 +63,7 @@ The Switch isn't L3-native, so routing between VLANs happens on the USG.
 
 | SSID                | VLAN ID | Spectrum    | Role            |
 | ------------------- | ------- | ----------- | --------------- |
-| `whats-up-bb-hru`   | 6       | 5GHz only   | trusted devices |
+| `whats-up-bb-hru`   | n/a     | 5GHz only   | trusted devices |
 | `whats-up-bb-iot`   | 69      | 2.4GHz only | trusted devices |
 
 ## Hosts
