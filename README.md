@@ -37,9 +37,8 @@ NBN FTTC 100/40 through Aussie Broadband as of 2019-11.
 
 | Subnet Name      | Domain          | Location  | CIDR              | VLAN ID |
 | ---------------- | --------------- | --------- | ----------------- | ------- |
-| CentralTrusted   | central-trusted | Melbourne | `192.168.6.1/24`  | 6       |
+| CentralTrusted   | central-trusted | Melbourne | `192.168.1.0/24`  | n/a     |
 | CentralIOT       | central-iot     | Melbourne | `192.168.69.1/24` | 69      |
-| CentralBastion   | central-bastion | Melbourne | `192.168.99.1/24` | 99      |
 
 By convention, the VLAN ID matches the third octet.
 
