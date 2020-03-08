@@ -20,6 +20,8 @@ static site if it gets unwieldy.
     - [ChromeCast-Ultra](#chromecast-ultra)
     - [glow](#glow-1)
     - [bep](#bep)
+  - [Troubleshooting](#troubleshooting)
+    - [USG (router) not giving out DHCP](#usg-router-not-giving-out-dhcp)
 
 ## Why is it public?
 
@@ -159,3 +161,28 @@ This is a [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberr
 * Memory: 1GB RAM
 
 This is the only trusted device on the `central-iot` network. It _will be_ used for monitoring and controlling IOT stuff, when I get around to it.
+
+## Troubleshooting
+
+### USG (router) not giving out DHCP
+
+On Thursday 2020-03-05, I had an NBN outage due to flooding on the street; the fiber and the device in the pit had to be replaced.
+
+After service was restored - around 13:30 on Saturday 2020-03-07 - my wifi SSID was not available- even after restarting the USG, the switch and the AP several times. I narrowed the issue down to the USG: it was not servicing DHCP, even with my laptop connected directly to the LAN1 port.
+
+This was quite frustrating given my investment in this gear and the setup - but thankfully the fix was reatively simple.
+
+I decided to factory reset it with the pin button on the front; thankfully, I'd left the controller on the same subnet as the default subnet the USG uses when it starts up, so I just needed to re-adopt it in order to roll out all the established config.
+
+The process is:
+
+1. power down the switch (which also powers the APs and the controller)
+2. factory reset the USG
+3. power up the switch
+4. connect a laptop over wifi or ethernet
+5. go to the web UI for the controller (`192.168.1.9`) - the `.localdomain` address for it doesn't work until the USG is fully configured
+6. go to devices; "forget" the USG
+7. re-adopt the USG
+8. wait for all the config to roll out
+
+Interestingly, even after my Chromecast Ultra reconnected, Android devices couldn't detect it, and the Google Home app said it was "not available". I had to restart my phone before apps that support Chromecast would show the cast button.
