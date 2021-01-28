@@ -114,19 +114,20 @@ The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Arch boot
 
 Hostname is `rup` under Windows, `mopl` under Arch.
 
-### niue
+### glom
 
 **Network**: CentralTrusted
 
-This is a desktop I built for work and gaming.
+This is a desktop I built for gaming and the occasional big workload.
 
-* Year: 2017
-* CPU: AMD Ryzen 5 1600 6 Core AM4 CPU
-* Video: GeForce GTX 1060 6GG
+* Year: 2021
+* CPU: AMD Ryzen 7 3700x 8 Core AM4 CPU
+* CPU Cooler: Wraith Prism (stock)
+* Board: Gigabyte B550M AORUS PRO
+* Video: GeForce RTX 2080 7GB
 * Memory: Corsair 16GB DDR4 3000MHz
-
-The drive is partitioned 50-50 between Windows 10 Home and Arch Linux. Windows
-boots by default.
+* Case: Thermaltake Core V21 Black USB3
+* Storage: Samsung 860 EVO 1TB M.2 SSD
 
 ### ChromeCast-Ultra
 
